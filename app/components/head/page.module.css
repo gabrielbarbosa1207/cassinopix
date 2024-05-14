@@ -1,0 +1,50 @@
+.head{
+    background-color: rgba(46,50,53,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+
+.btn{
+    background-color: #006bbd;
+    padding: 15px 25px;
+    color: white;
+    border-radius: 8px;
+}
+
+.margen{
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:768px){
+    .btn{
+        display: none;
+    }
+
+    .head{
+       display: block;
+       margin: auto;
+    }
+
+    .margen{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .img{
+        display: block;
+        margin: auto;
+    }
+
+    #logoImg{
+        margin: auto;
+    }
+}

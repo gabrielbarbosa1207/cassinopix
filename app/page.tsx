@@ -1,113 +1,322 @@
+"use client"
 import Image from "next/image";
+import BGDesktop from "./components/images/cassinopix-bg.jpg";
+import style from "./page.module.css";
+import bgPatern from "./components/images/BG-PATTERN.jpg";
+import n1 from "./components/images/numbers.svg";
+import n2 from "./components/images/number2.svg";
+import pix from "./components/images/pix.svg"
+import Headline from "./components/images/7K.png"
+import BgMobile from "./components/images/bgmobile.png"
+import Selo from "./components/images/selo.webp";
+import Diferencias from "./components/images/diferencias.png"
+import LogoCassino from "./components/images/LogoCassino.svg"
+import Sponsor from "./components/images/7b13f83fa43714f59786efa4082f55a1.webp";
+import insta from "./components/images/insta.svg";
+import telegram from "./components/images/telegram.svg";
+import sponsor01 from "./components/images/spr1.webp"
+import sponsor02 from "./components/images/spr2.webp"
+import sponsor03 from "./components/images/spr3.webp"
+import sponsor04 from "./components/images/spr4.webp"
+import sponsor05 from "./components/images/spr5.webp"
+import sponsor06 from "./components/images/spr6.webp"
+import sponsor07 from "./components/images/spr7.webp"
+import sponsor08 from "./components/images/spr8.webp"
+import Header from "./components/head/page";
+import Terms from "./components/modals/terms/page";
+import Terms2 from "./components/modals/modal2/page";
+import Terms3 from "./components/modals/modal3/page";
+import Terms4 from "./components/modals/modal4/page";
+
+
+
+import { useState } from "react";
+
+
 
 export default function Home() {
+  const [terms, setTerms] = useState(false)
+  const [modal1, setModal1] = useState(false)
+  const [modal2, setModal2] = useState(false)
+  const [modal3, setModal3] = useState(false)
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <Header />
+      <section className={style.section}>
+        <div  className={`${style.bgImage} ${style.bgMobile} ${style.bgDesktop}`}>
+          <div className={style.headlineDiv}>
+            <div id={style.head}>
+              <h1 className={style.headline}>
+                GANHE ATÉ 
+              </h1>
+              <div>
+                <Image  id={style.Image} className={style.headlineImg} src={Headline} alt="" />
+              </div>
+              <p>
+                EM BÔNUS
+              </p>
+              <div>
+                <Image id={style.pix}  src={Diferencias} alt="" />
+              </div>
+              <div className={style.btn}>
+                <a href="https://cassinopix.com/">ABRA SUA <strong>CONTA!</strong></a>
+              </div>
+            </div>
+          </div>
         </div>
+        </section>
+        <section className={style.section02}>
+          <div className={style.movingTextContainer}>
+            <div className={style.movingText}>
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              
+            </div>
+          </div>
+          <div className={style.movingTextContainer2}>
+            <div className={style.movingText2}>
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ
+              R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM 
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE 
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM
+              BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE
+              ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 
+              EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS • 
+              GANHE ATÉ R$ 7000 EM BÔNUS • GANHE ATÉ R$ 7000 EM BÔNUS •
+              
+            </div>
+          </div>
+        </section>
+        <section className={style.bgPattern} style={{backgroundImage: `url(${bgPatern.src})`}}>
+          <h2>
+            COMO RESGATAR SEU BÔNUS
+          </h2>
+          <div className={style.numsDiv}>
+            <div>
+             <span className={style.nums}>
+              1
+             </span>
+              <p>
+                <span>CRIE SUA CONTA</span> FÁCIL E RÁPIDO, EM POUCOS MINUTOS
+              </p>
+            </div>
+            <div>
+              <span className={style.nums}>2</span>
+              <p>
+                <span>FAÇA UM DEPÓSITO</span> DEPÓSITO MÍNIMO DE R$5
+              </p>
+            </div>
+            <div>
+             <span className={style.nums}>3</span>
+              <p>
+                <span>RECEBA SEU BÔNUS</span> RECEBA O DOBRO NA HORA!
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer className={style.footer}>
+          <div>
+              <Image width={200} src={LogoCassino}  alt=""/>
+              <Image width={300} className={style.selo} src={Selo} alt="" />
+            <div className={style.divSocial}>
+              <a href="https://www.instagram.com/cassino.pix/?hl=en">
+              <Image src={insta} alt="" />
+              </a>
+              <a href="https://t.me/Suportecassinopix_bot">
+              <Image src={telegram} alt="" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <Image width={150} src={Sponsor} alt="" />
+          </div>
+          <div>
+            <p>
+            CassinoPix is an online entertainment website that offers its users a unique sports betting experience. This website is operated by NovaWave Technology N.V., a company registered in Curaçao, under number 162293, with registered office in Zuikertuintjeweg Z/N (Zuikertuin Tower), Curaçao, an entity duly authorized and licensed by the Government of Curaçao.
+            </p>
+            <p>
+            By accessing, continuing to use, or browsing this website you agree that we may use certain browser cookies to improve your experience whilst using our site. We only use cookies to enhance your experience, and this does not interfere with your privacy.
+            </p>
+          </div>
+        </footer>
+        <div className={style.sponsors}>
+          <Image src={sponsor01} alt="" />
+          <Image src={sponsor02} alt="" />
+          <Image src={sponsor03} alt="" />
+          <Image src={sponsor04} alt="" />
+          <Image src={sponsor05} alt="" />
+          <Image src={sponsor06} alt="" />
+          <Image src={sponsor07} alt="" />
+          <Image src={sponsor08} alt="" />
+        </div>
+        <div className={style.terms}>
+
+          <button onClick={()=>{
+            setTerms(true)
+          }}>
+            <span>
+              Termos e Condições
+            </span>
+          </button>
+
+          <button onClick={()=>{
+            setModal1(true)
+          }}>
+          <span>
+            Políticas de Cookies
+          </span>
+          </button>
+          <button onClick={()=>{
+            setModal2
+          }}>
+
+          </button>
+
+          <button onClick={()=>{
+            setModal3(true)
+          }}>
+          <span>
+            Regras e Regulamentos
+          </span>
+          </button>
+
+          <button onClick={()=>{
+            setModal3(true)
+          }}>
+          <span>
+            Políticas de Privacidade
+          </span>
+          </button>
+
+        </div>
+    {terms && (
+      <div className="modal">
+        <button onClick={()=>{
+          setTerms(false)
+        }}>
+          <Terms />
+        </button>
+       
       </div>
+    )}
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    {modal1 && (
+      <div className="modal">
+        <button onClick={()=>{
+          setModal1(false)
+        }}>
+          <Terms />
+        </button>
+       
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    )}
+        {modal2 && (
+      <div className="modal">
+        <button onClick={()=>{
+          setModal2(false)
+        }}>
+          <Terms2 />
+        </button>
+       
       </div>
-    </main>
+    )}
+        {modal3 && (
+      <div className="modal">
+        <button onClick={()=>{
+          setModal3(false)
+        }}>
+          <Terms3 />
+        </button>
+       
+      </div>
+    )}
+    </>
   );
 }
